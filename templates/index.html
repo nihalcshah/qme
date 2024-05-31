@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container px-10 overflow-x-hidden m-auto w-screen mt-4 text-white">
+    <div class=" m-auto md:grid md:grid-cols-8 min-h-[75vh] gap-x-24">
+        <div class="flex m-auto w-24 mt-10 sm:m-auto sm:w-full col-span-3">
+            <div class="m-auto  relative">
+                <img src="{{url_for('static',filename='img/eba.png')}}"
+                    class="glow  z-20 w-full relative md:skew-y-[10deg] rounded-full sm:rounded-xl" alt="">
+                <div class="hidden md:block absolute w-full -top-[5%]  aspect-square bg-sky-300/70 rounded-xl skew-y-[4deg]"></div>
+            </div>
+        </div>
+        <div class="col-span-5 flex mt-10 sm:mt-0">
+            <div class="m-auto relative">
+                <div class="text-5xl text-sky-300 font-black text-glow tracking-wider">Welcome to Quantum Mechanics
+                    Engineering</div>
+                <div class="text-2xl text-white font-bold mt-4">Train for the future. Engage with tomorrow. Embrace the
+                    quantum revolution.</div>
+                <a type="button" href="google.com"
+                    class="text-white bg-sky-500 mt-8 hover:bg-sky-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ">
+                    Schedule classes now
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="min-h-[40vh] flex sm:py-10">
+        <div class="flex gap-x-8 m-auto sm:p-0">
+            <div class="hidden sm:block m-auto w-1/2">
+                <div class="text-[2.5rem] font-bold">Begin your quantum journey</div>
+                <div class="text-2xl font-bold mt-3">Learn about the principles for quantum computing at a pace that suits you.</div>
+            </div>
+            <div class="m-auto bg-white rounded-lg shadow-inner text-black p-12 py-6 font-bold">
+                <div class="text-3xl">Examine various topics</div>
+                <div class="py-2 text-lg text-sky-400">
+                    <div class="flex gap-x-4 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="m-auto w-5 h-5 text-sky-400" stroke-width="3" fill="none" viewBox="0 0 24 24"  >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>  
+                        <div>Quantum bits and superposition</div>                        
+                    </div>
+                    <div class="flex gap-x-4 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="m-auto w-5 h-5 text-sky-400" stroke-width="3" fill="none" viewBox="0 0 24 24"  >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>  
+                        <div>Quantum bits and superposition</div>                        
+                    </div>
+                    <div class="flex gap-x-4 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="m-auto w-5 h-5 text-sky-400" stroke-width="3" fill="none" viewBox="0 0 24 24"  >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>  
+                        <div>Quantum bits and superposition</div>                        
+                    </div>
+                    <div class="flex gap-x-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="m-auto w-5 h-5 text-sky-400" stroke-width="3" fill="none" viewBox="0 0 24 24"  >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>  
+                        <div>Quantum bits and superposition</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="min-h-[60vh] py-10">
+        <div class="">
+            <div class="m-auto">
+                <div class="text-[2.5rem] font-bold text-center">Our Projects</div>
+                <div class="text-xl font-bold mt-1 text-center">See what students can create with QME knowledge.</div>
+            </div>
+            <div class="mt-5 m-auto flex flex-col font-bold text-black">
+                <div class="sm:flex gap-y-8 sm:gap-x-8">
+                    <div class="bg-white m-auto rounded-lg p-6 sm:p-12 sm:w-1/2">
+                        <div class="text-3xl">Fuel Cell Battery Development through Quantum Entanglement</div>
+                        <div class="text-lg italic font-medium">Neev Shah</div>
+                        <div class="line-clamp-2 mt-4 font-semibold">This project aims to develop a revolutionary new fuel cell battery technology that leverages the principles of quantum entanglement to improve energy storage and efficiency. By harnessing the power of quantum entanglement, our team will design and develop a novel fuel cell battery that can store and release energy more efficiently, with the potential to transform the way we power our daily lives.                        </div>
+                    </div>
+                    <div class="m-auto flex-col gap-y-8 hidden sm:flex" >
+                        <div class="p-8 bg-sky-400 text-white rounded-lg">
+                            <div class="text-xl">Quantum Catalyst: Unlocking Efficient Chemical Reactions through Quantum Entanglement</div>
+                            <div class="text-md italic font-medium">Akshita Tiwari</div>
+                        </div>
+                        <div class="p-8 bg-sky-400 text-white rounded-lg">
+                            <div class="text-xl">
+                                Entangled Materials: Developing Quantum-Entangled Materials for Advanced Applications
+                            </div>
+                            <div class="text-md italic font-medium">CJ Shah</div>
+                        </div>
+                    </div>
+                </div>
+                <a type="button" href="google.com"
+                    class="text-sky-500 mx-auto font-bold bg-white mt-8 hover:bg-sky-400 hover:text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ">
+                    View more projects
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.glow {
+    -webkit-box-shadow: 0px 0px 10px #83c0f6;
+    -moz-box-shadow: 0px 0px 10px #83c0f6;
+    box-shadow: 0px 2px 30px #83c0f6;
+}
+
+.text-glow {
+    text-shadow: 0px 10px 10px  rgba(137,199,244, 0.35);
+    /* -webkit-animation: tglow 1s ease-in-out infinite alternate;
+    -moz-animation: tglow 1s ease-in-out infinite alternate;
+    animation: tglow 1s ease-in-out infinite alternate; */
+}
+
+@-webkit-keyframes tglow {
+    from {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #83c0f6, 0 0 0px #83c0f6, 0 0 0px #83c0f6, 0 0 0px #83c0f6, 0 0 0px #83c0f6;
+    }
+    to {
+        text-shadow: 2px 2px 2px skyblue;
+    }
+}
